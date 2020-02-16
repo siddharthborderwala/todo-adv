@@ -1,0 +1,28 @@
+.field {
+	display: block;
+	position: relative;
+	height: 6rem;
+	background-color: $color-grey-light-3;
+	width: 100%;
+	
+	&__input {
+		width: 95vw;
+		@include absCenter;
+		padding: 1rem;
+		border-radius: 4px;
+		border: none;
+		font-family: 'Montserrat';
+		caret-color: $color-primary-light;
+		font-size: 1.6rem;
+
+		&::placeholder {
+			color: $color-primary-light;
+			font-weight: 500;
+		}
+
+		&:focus {
+			outline: none;
+			border: 2px solid rgba($color-primary-light, .7);
+		}
+	}
+}

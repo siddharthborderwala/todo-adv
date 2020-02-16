@@ -1,0 +1,35 @@
+.todo {
+	background-color: $color-grey-light-1;
+	padding: 1rem;
+	border-radius: 4px;
+	box-shadow: 0 1rem 4rem rgba($color-black, $alpha: .2);
+	margin: 1rem 2rem;
+	width: 27rem;
+
+	&__title {
+		font-size: 2rem;
+		font-weight: 400;
+		display: inline-block;
+		color: $color-primary;
+		transform: translateY(5px);
+		padding: 1rem;
+		width: 85%;
+		vertical-align: middle;
+	}
+
+	&__cross {
+		margin-right: 1rem;
+		font-size: 3rem;
+		font-weight: 700;
+		color: $color-primary-light;
+		transform: translateY(25%) rotate(0);
+		transition: transform .5s ease;
+		display: inline-block;
+		transform-origin: -5% 5%;
+
+		&:hover {
+			transform: rotate(180deg);
+			cursor: pointer;
+		}
+	}
+}

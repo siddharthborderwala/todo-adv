@@ -1,6 +1,19 @@
-@import "components/button";
+//abstracts
+@import "abstract/variables";
+@import "abstract/mixins";
+//base
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+//components
+@import "components/todo";
+@import "components/field";
+//layouts
+@import "layout/header";
+@import "layout/ground";
+//pages
+@import "pages/home";
 
-h1 {
-	color: blue;
-	background-color: red;
+body {
+	background-color: $color-grey-light-1;
 }

@@ -1,0 +1,21 @@
+.header {
+	display: block;
+	padding: 2rem 3rem;
+	background-image: linear-gradient(to right top, $color-primary, $color-primary-light);
+	box-shadow: 0 2rem 4rem rgba($color-black, .2);
+	z-index: 10;
+
+	&__greet {
+		font-size: 3rem;
+		font-weight: 300;
+		color: $color-white;
+		display: inline-block;
+	}
+
+	&__date {
+		font-size: 2.5rem;
+		color: $color-grey-light-1;
+		float: right;
+		margin-top: 3px;
+	}
+}
