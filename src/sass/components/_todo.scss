@@ -5,6 +5,11 @@
 	box-shadow: 0 1rem 4rem rgba($color-black, $alpha: .2);
 	margin: 1rem 2rem;
 	width: 27rem;
+	transition: all .2s ease;
+	cursor: default;
+	&:hover {
+		box-shadow: 0 1rem 4rem rgba($color-black, $alpha: .4);
+	}
 
 	&__title {
 		font-size: 2rem;
@@ -23,9 +28,9 @@
 		font-weight: 700;
 		color: $color-primary-light;
 		transform: translateY(25%) rotate(0);
-		transition: transform .5s ease;
+		transition: transform .3s ease;
 		display: inline-block;
-		transform-origin: -5% 5%;
+		transform-origin: 50% 63%;
 
 		&:hover {
 			transform: rotate(180deg);
