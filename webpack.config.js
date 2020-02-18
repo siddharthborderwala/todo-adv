@@ -2,12 +2,12 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const cssStyleLoader = devMode ? "style-loader" : {
-    loader:  MiniCssExtractPlugin.loader,
-    options: {
-        path: "./dist/css",
-    }
-};
+// const cssStyleLoader = devMode ? "style-loader" : {
+//     loader:  MiniCssExtractPlugin.loader,
+//     options: {
+//         path: "./dist/css",
+//     }
+// };
 
 module.exports = {
 	entry: ["@babel/polyfill", "./src/js/index.js", "./src/sass/main.scss"],

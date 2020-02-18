@@ -3,10 +3,10 @@ import "../sass/main.scss";
 const todoBaseMarkup = `
 	<div class="todo">
 		<input class="todo__check" type="checkbox">
-		<span class="todo__cross">&times;</span>
 		<h2 class="todo__title">
-			%todo-title%
+		%todo-title%
 		</h2>
+		<span class="todo__cross">&times;</span>
 	</div>
 `;
 
