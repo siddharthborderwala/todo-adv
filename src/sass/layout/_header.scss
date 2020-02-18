@@ -18,4 +18,25 @@
 		float: right;
 		margin-top: 3px;
 	}
+
+	@include respond(sm) {
+		padding: 1rem;
+
+		&__greet {
+			font-size: 2rem;
+		}
+
+		&__date {
+			font-size: 1.5rem;
+			display: inline-block;
+			margin-left: 2px;
+		}
+
+	}
+
+	@include respond(xsm) {
+		&__date {
+			float: none;
+		}
+	}
 }

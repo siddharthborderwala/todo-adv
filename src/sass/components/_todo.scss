@@ -1,17 +1,39 @@
 .todo {
 	display: table;
-	background-color: $color-grey-light-1;
+	background-color: $color-grey-light-4;
 	padding: 1.5rem;
 	border-radius: 4px;
-	box-shadow: 0 .5rem 1.5rem rgba($color-black, $alpha: .2);
+	box-shadow: 0 .5rem 1.5rem rgba($color-black, $alpha: .1);
 	margin: 1rem 2rem;
 	width: 27rem;
 	transition: all .2s ease;
 	cursor: default;
+	padding-bottom: 0;
+
+	&:hover {
+		box-shadow: 0 .5rem 1.5rem rgba($color-black, $alpha: .2);
+	}
 
 	&__check {
 		display: table-cell;
 		transform: scale(1.15);
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&__cross {
+		color: $color-primary-light;
+		font-size: 2.8rem;
+		font-weight: 700;
+		transform: translate(-4px, -5px);
+		display: inline-block;
+		height: min-content;
+
+		&:hover {
+			cursor: pointer;
+		}
 	}
 
 	&__title {
@@ -21,8 +43,13 @@
 		font-size: $default-font-size;
 	}
 
-	&__check:checked + &__title {
-		text-decoration: line-through $color-grey-dark-1;
+	&__check:checked ~ &__title {
+		text-decoration: line-through $color-grey;
 	}
+
+	&__check:active, &__check:focus {
+		border: none;
+		outline: none;
+	} 
 
 }
